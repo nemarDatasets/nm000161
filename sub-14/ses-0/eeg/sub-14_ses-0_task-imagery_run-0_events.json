@@ -1,0 +1,39 @@
+{
+	"onset": {
+		"Description": "Onset (in seconds) of the event from the beginning of the first datapoint. Negative onsets account for events before the first stored data point.",
+		"Units": "s"
+	},
+	"duration": {
+		"Description": "Duration of the event in seconds from onset. Must be zero, positive, or 'n/a' if unavailable. A zero value indicates an impulse event. ",
+		"Units": "s"
+	},
+	"sample": {
+		"Description": "The event onset time in number of sampling points.First sample is 0."
+	},
+	"value": {
+		"Description": "The event code (also known as trigger code or event ID) associated with the event."
+	},
+	"trial_type": {
+		"Description": "The type, category, or name of the event.",
+		"HED": {
+			"letter_a": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Write, Hand, (Label/a)))",
+			"letter_d": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Write, Hand, (Label/d)))",
+			"letter_e": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Write, Hand, (Label/e)))",
+			"letter_f": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Write, Hand, (Label/f)))",
+			"letter_j": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Write, Hand, (Label/j)))",
+			"letter_n": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Write, Hand, (Label/n)))",
+			"letter_o": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Write, Hand, (Label/o)))",
+			"letter_s": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Write, Hand, (Label/s)))",
+			"letter_t": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Write, Hand, (Label/t)))",
+			"letter_v": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Write, Hand, (Label/v)))"
+		}
+	},
+	"Description": "Event annotations for imagery task (letter_a, letter_d, letter_e, letter_f, letter_j, letter_n, letter_o, letter_s, letter_t, letter_v).",
+	"StimulusPresentation": {
+		"fade_in_duration": "2.0s",
+		"visible_duration": "0.5s",
+		"fade_out_duration": "2.0s",
+		"writing_duration": "4.0s",
+		"total_trial_duration": "8.5s"
+	}
+}

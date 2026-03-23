@@ -1,0 +1,39 @@
+{
+	"Name": "BNCI 2024-001 Handwritten Character Classification dataset",
+	"BIDSVersion": "1.9.0",
+	"HEDVersion": "8.4.0",
+	"DatasetType": "derivative",
+	"License": "CC-BY-4.0",
+	"Authors": [
+		"Markus R. Crell",
+		"Gernot R. M\u00fcller-Putz"
+	],
+	"EthicsApprovals": [
+		"Ethics Committee at Graz University of Technology"
+	],
+	"ReferencesAndLinks": [
+		"https://bnci-horizon-2020.eu/database/data-sets"
+	],
+	"GeneratedBy": [
+		{
+			"CodeURL": "https://github.com/NeuroTechX/moabb",
+			"Name": "moabb",
+			"Description": "Mother of All BCI Benchmarks",
+			"Version": "1.5.0"
+		}
+	],
+	"SourceDatasets": [
+		{
+			"DOI": "10.1016/j.compbiomed.2024.109132",
+			"URL": "https://bnci-horizon-2020.eu/database/data-sets"
+		}
+	],
+	"Keywords": [
+		"Brain-computer interface (BCI)",
+		"Electroencephalography (EEG)",
+		"Handwriting",
+		"Continuous movement decoding",
+		"Non-invasive"
+	],
+	"PublicationYear": 2024
+}

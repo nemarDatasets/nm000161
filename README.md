@@ -1,0 +1,243 @@
+# BNCI 2024-001 Handwritten Character Classification dataset
+
+BNCI 2024-001 Handwritten Character Classification dataset.
+
+## Dataset Overview
+
+- **Code**: BNCI2024-001
+- **Paradigm**: imagery
+- **DOI**: 10.1016/j.compbiomed.2024.109132
+- **Subjects**: 20
+- **Sessions per subject**: 1
+- **Events**: letter_a=1, letter_d=2, letter_e=3, letter_f=4, letter_j=5, letter_n=6, letter_o=7, letter_s=8, letter_t=9, letter_v=10
+- **Trial interval**: [0, 3] s
+- **Runs per session**: 2
+- **File format**: MAT
+
+## Acquisition
+
+- **Sampling rate**: 500.0 Hz
+- **Number of channels**: 60
+- **Channel types**: eeg=60, eog=4
+- **Channel names**: AF3, AF4, AF7, AF8, C1, C2, C3, C4, C5, C6, CP1, CP2, CP3, CP4, CP5, CP6, CPz, Cz, EOG1, EOG2, EOG3, EOG4, F1, F2, F3, F4, F5, F6, F7, F8, FC1, FC2, FC3, FC4, FC5, FC6, FT10, FT7, FT8, FT9, Fp1, Fp2, Fpz, Fz, M1, M2, O1, O2, Oz, P1, P2, P3, P4, P5, P6, P7, P8, PO3, POz, Pz, T7, T8, TP7, TP8
+- **Montage**: eogl1 eogl2 eogl3 eogr1 af7 af3 afz af4 af8 f7 f5 f3 f1 fz f2 f4 f6 f8 ft7 fc5 fc3 fc1 fcz fc2 fc4 fc6 ft8 t7 c5 c3 c1 cz c2 c4 c6 t8 tp7 cp5 cp3 cp1 cpz cp2 cp4 cp6 tp8 p7 p5 p3 p1 pz p2 p4 p6 p8 ppo1h ppo2h po7 po3 poz po4 po8 o1 oz o2
+- **Hardware**: BrainVision
+- **Software**: EEGLAB
+- **Reference**: right mastoid
+- **Sensor type**: active electrodes
+- **Line frequency**: 50.0 Hz
+- **Online filters**: 50 Hz notch
+- **Cap manufacturer**: Brain Products GmbH
+- **Auxiliary channels**: EOG (4 ch, horizontal, vertical)
+
+## Participants
+
+- **Number of subjects**: 20
+- **Health status**: healthy
+- **Age**: mean=27.5, std=3.92
+- **Gender distribution**: male=11, female=11
+- **Handedness**: {'right': 22}
+- **BCI experience**: not specified
+- **Species**: human
+
+## Experimental Protocol
+
+- **Paradigm**: imagery
+- **Task type**: handwriting
+- **Number of classes**: 10
+- **Class labels**: letter_a, letter_d, letter_e, letter_f, letter_j, letter_n, letter_o, letter_s, letter_t, letter_v
+- **Trial duration**: 8.5 s
+- **Study design**: Handwritten character task with 10 letters (a,d,e,f,j,n,o,s,t,v) using right index finger. Letters fade in (2s), remain visible (0.5s), fade out (2s), then 4s writing phase. Each letter written 60 times across 15 runs.
+- **Feedback type**: Training included visual feedback showing finger position; main paradigm had no feedback during writing (only fixation cross)
+- **Stimulus type**: letter cue
+- **Stimulus modalities**: visual
+- **Primary modality**: visual
+- **Mode**: offline
+- **Training/test split**: True
+- **Instructions**: Start movement when letter fades out completely; write letter during 4s writing phase; stop hand at last position until next letter appears; execute home movement during fade-in to return to comfortable starting position
+- **Stimulus presentation**: fade_in_duration=2.0s, visible_duration=0.5s, fade_out_duration=2.0s, writing_duration=4.0s, total_trial_duration=8.5s
+
+## HED Event Annotations
+
+Schema: HED 8.4.0 | Browse: https://www.hedtags.org/hed-schema-browser
+
+```
+  letter_a
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Write
+          ├─ Hand
+          └─ Label/a
+
+  letter_d
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Write
+          ├─ Hand
+          └─ Label/d
+
+  letter_e
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Write
+          ├─ Hand
+          └─ Label/e
+
+  letter_f
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Write
+          ├─ Hand
+          └─ Label/f
+
+  letter_j
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Write
+          ├─ Hand
+          └─ Label/j
+
+  letter_n
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Write
+          ├─ Hand
+          └─ Label/n
+
+  letter_o
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Write
+          ├─ Hand
+          └─ Label/o
+
+  letter_s
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Write
+          ├─ Hand
+          └─ Label/s
+
+  letter_t
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Write
+          ├─ Hand
+          └─ Label/t
+
+  letter_v
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Write
+          ├─ Hand
+          └─ Label/v
+
+```
+## Paradigm-Specific Parameters
+
+- **Detected paradigm**: motor_imagery
+- **Imagery tasks**: handwriting of letters a, d, e, f, j, n, o, s, t, v
+- **Cue duration**: 2.0 s
+- **Imagery duration**: 4.0 s
+
+## Data Structure
+
+- **Trials**: 60
+- **Blocks per session**: 15
+- **Block duration**: 340 s
+- **Trials context**: per_class
+
+## Preprocessing
+
+- **Data state**: raw
+- **Preprocessing applied**: True
+- **Steps**: notch filtering, bandpass filtering, bad channel interpolation, EOG artifact correction (SGEYESUB), ICA for artifact removal, re-referencing to CAR, bad segment rejection, lowpass filtering, downsampling, epoching
+- **Highpass filter**: 0.3 Hz
+- **Lowpass filter**: 70.0 Hz
+- **Bandpass filter**: {'low_cutoff_hz': 0.3, 'high_cutoff_hz': 70.0}
+- **Notch filter**: [50] Hz
+- **Filter type**: Butterworth
+- **Filter order**: 4
+- **Artifact methods**: ICA, SGEYESUB
+- **Re-reference**: car
+- **Downsampled to**: 128 Hz
+- **Epoch window**: [-4.5, 4.0]
+- **Notes**: Two datasets created: dataset 1 (0.3-3 Hz, 10 Hz sampling) and dataset 2 (0.3-40 Hz, 128 Hz sampling). Bad segments rejected if exceeding ±120 μV or kurtosis/probability > 7 SD from mean.
+
+## Signal Processing
+
+- **Classifiers**: Shrinkage Linear Discriminant Analysis (sLDA), EEGNet CNN
+- **Feature extraction**: low-frequency EEG, broadband EEG, continuous kinematics decoding
+- **Frequency bands**: analyzed=[0.3, 70.0] Hz
+- **Spatial filters**: CAR
+
+## Cross-Validation
+
+- **Method**: 2-times repeated 5-fold cross-validation
+- **Folds**: 5
+- **Evaluation type**: cross_session
+
+## Performance (Original Study)
+
+- **Accuracy**: 26.2%
+- **10 Letters Direct Lowfreq**: 23.1
+- **10 Letters Twostep**: 26.2
+- **5 Letters Direct Lowfreq**: 39.0
+- **5 Letters Twostep**: 46.7
+- **Kinematics Correlation Range**: 0.10-0.57
+- **Chance Level Correlation**: 0.04
+
+## BCI Application
+
+- **Applications**: communication, character_selection
+- **Environment**: laboratory
+- **Online feedback**: False
+
+## Tags
+
+- **Pathology**: Healthy
+- **Modality**: Motor
+- **Type**: Motor
+
+## Documentation
+
+- **Description**: Classification of handwritten letters from EEG through continuous kinematic decoding
+- **DOI**: 10.1016/j.compbiomed.2024.109132
+- **License**: CC-BY-4.0
+- **Investigators**: Markus R. Crell, Gernot R. Müller-Putz
+- **Senior author**: Gernot R. Müller-Putz
+- **Contact**: gernot.mueller@tugraz.at
+- **Institution**: Graz University of Technology
+- **Department**: Institute of Neural Engineering
+- **Address**: Graz, Austria
+- **Country**: Austria
+- **Repository**: BNCI Horizon 2020
+- **Data URL**: https://bnci-horizon-2020.eu/database/data-sets
+- **Publication year**: 2024
+- **Ethics approval**: Ethics Committee at Graz University of Technology
+- **Keywords**: Brain-computer interface (BCI), Electroencephalography (EEG), Handwriting, Continuous movement decoding, Non-invasive
+
+## Abstract
+
+This study explores the classification of ten letters (a,d,e,f,j,n,o,s,t,v) from non-invasive neural signals of 20 participants. Letters were classified with direct classification from low-frequency and broadband EEG, and a two-step approach comprising continuous decoding of hand kinematics followed by classification. The two-step approach yielded significantly higher performances of 26.2% for ten letters and 46.7% for five letters. Hand kinematics could be reconstructed with correlation of 0.10 to 0.57 (average chance level: 0.04). Results suggest movement speed as the most informative kinematic for decoding short hand movements.
+
+## Methodology
+
+Participants wrote 10 letters using right index finger with motion capture tracking (30 Hz, 2D positions). Two-round session with 7 runs (round 1) and 8 runs (round 2), 40 trials per run, 8.5s per trial. Training phase included 4 steps: observation, guided following, unguided following, and execution without feedback. Classification using sliding-window approach with sLDA and EEGNet CNN. Trajectory decoding using EEGNet architecture adapted for regression of position-based (px, py, vx, vy), distance-based (d, ḋ, θ, θ̇), and speed-based (s) kinematics.
+
+## References
+
+Crell, M. R., & Muller-Putz, G. R. (2024). Handwritten character classification from EEG through continuous kinematic decoding. Computers in Biology and Medicine, 182, 109132. https://doi.org/10.1016/j.compbiomed.2024.109132
+
+Notes
+
+.. versionadded:: 1.3.0
+
+This dataset is notable for exploring non-invasive EEG-based handwritten character classification, which could enable communication for individuals with limited movement capacity. The study demonstrated that handwritten characters can be classified from non-invasive EEG and that decoding movement kinematics prior to classification improves performance.
+Appelhoff, S., Sanderson, M., Brooks, T., Vliet, M., Quentin, R., Holdgraf, C., Chaumon, M., Mikulan, E., Tavabi, K., Hochenberger, R., Welke, D., Brunner, C., Rockhill, A., Larson, E., Gramfort, A. and Jas, M. (2019). MNE-BIDS: Organizing electrophysiological data into the BIDS format and facilitating their analysis. Journal of Open Source Software 4: (1896). https://doi.org/10.21105/joss.01896
+
+Pernet, C. R., Appelhoff, S., Gorgolewski, K. J., Flandin, G., Phillips, C., Delorme, A., Oostenveld, R. (2019). EEG-BIDS, an extension to the brain imaging data structure for electroencephalography. Scientific Data, 6, 103. https://doi.org/10.1038/s41597-019-0104-8
+
+---
+Generated by MOABB 1.5.0 (Mother of All BCI Benchmarks)
+https://github.com/NeuroTechX/moabb
