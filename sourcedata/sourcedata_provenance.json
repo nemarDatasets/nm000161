@@ -1,0 +1,115 @@
+{
+ "dataset": "nm000161",
+ "moabb_class": "BNCI2024_001",
+ "moabb_version_used": "1.5.0",
+ "retrieved": "2026-08-11",
+ "retrieved_by": "moabb.datasets.BNCI2024_001.data_path()",
+ "upstream_cache_root": "/expanse/lustre/scratch/bpinto/temp_project/sourcedata_staging/mne_data/MNE-bnci-data/database/data-sets/001-2024",
+ "license": "CC-BY-4.0",
+ "doi": "10.1016/j.compbiomed.2024.109132",
+ "naming": "upstream_filenames_restored",
+ "n_files": 20,
+ "total_bytes": 18059768016,
+ "files": [
+  {
+   "file": "S01.mat",
+   "bytes": 903005088,
+   "sha256": "2b1524b7b671fa52b21aa77c8285881908482b44628879e62c59bfe64b0b8d6a"
+  },
+  {
+   "file": "S02.mat",
+   "bytes": 904246456,
+   "sha256": "d1876e59a6bc7a81fbaf8bd229ed88c55bc1aeaff7f68dc3cf6f808ef473413e"
+  },
+  {
+   "file": "S03.mat",
+   "bytes": 896972368,
+   "sha256": "29edf8f151ec26c7217c1dcfd11b5ec45c8f2b357ec155fe753c6a4fe7f87094"
+  },
+  {
+   "file": "S04.mat",
+   "bytes": 909294968,
+   "sha256": "4ac3297ccc67806e148259c8f4ffc25ca10c380c5355b741b23c41ae7f2ed426"
+  },
+  {
+   "file": "S05.mat",
+   "bytes": 899602088,
+   "sha256": "b5c21bda1ee3efecc8532b6911219977a85ccc30c46aeaac1d5e373f1197fa23"
+  },
+  {
+   "file": "S06.mat",
+   "bytes": 899556848,
+   "sha256": "dcd8678802fe99e1cae7ee93dff899cf2deab74990092d257beb9389f06120ce"
+  },
+  {
+   "file": "S07.mat",
+   "bytes": 919972760,
+   "sha256": "6c4af9e958422463bf2400f84f9bbbe5adaea93f97e1158ecb11f6bbff8cbb6b"
+  },
+  {
+   "file": "S08.mat",
+   "bytes": 902537264,
+   "sha256": "8291557bc0ea4e23b8d052ba8d2559668b4732e521746cd3043b3f3cd7a0dea9"
+  },
+  {
+   "file": "S09.mat",
+   "bytes": 895912144,
+   "sha256": "a4b1271a7f4d35d12b10be8194b71c31b7a7c193c51c083e24bd06b49d5cf99a"
+  },
+  {
+   "file": "S10.mat",
+   "bytes": 904182584,
+   "sha256": "896021b22850f66c45770e4ce2b42c0e86263a91566395e7d959dbd5729e0744"
+  },
+  {
+   "file": "S11.mat",
+   "bytes": 897643008,
+   "sha256": "caae22c8d2914d8e8ac2f047cd8a2d40e726b7bd91eaacc7ee019dd372dfe5a3"
+  },
+  {
+   "file": "S12.mat",
+   "bytes": 900406960,
+   "sha256": "96c6c4fbc2b7d6808427d7caf69bba8a011767e12127624c8291f6c72afb0f0b"
+  },
+  {
+   "file": "S13.mat",
+   "bytes": 898570112,
+   "sha256": "baa9935518ef03dab6bbdee66d54b170a807f9999d8403983f3f887f06851194"
+  },
+  {
+   "file": "S14.mat",
+   "bytes": 904530568,
+   "sha256": "dd322c7172a25d0370690e83eb45a902dc64715a9a1fbfe35c49915f9b26e9dc"
+  },
+  {
+   "file": "S15.mat",
+   "bytes": 902274608,
+   "sha256": "40bda23be624f03039b0b1dbd9efdb89fa738cabc0092d8d7629a702f38eeab2"
+  },
+  {
+   "file": "S16.mat",
+   "bytes": 898032000,
+   "sha256": "e2f86a45733495a6f7203b3207c6548e360bb3b9ffff7f4377b293334b329157"
+  },
+  {
+   "file": "S17.mat",
+   "bytes": 920576392,
+   "sha256": "e02cbbc93cb1f08a14596829c7d8d698ed03f45928e83a34dcf28bd3243a9c1a"
+  },
+  {
+   "file": "S18.mat",
+   "bytes": 904534680,
+   "sha256": "ad36a8a357e176a389df059f1e591df215d50f89ee0dc4b9ecc622446723311a"
+  },
+  {
+   "file": "S19.mat",
+   "bytes": 899942632,
+   "sha256": "08041246078d6848d5eac7b15fc46c9af301821a53b83a6430cafc3a4cfee3c5"
+  },
+  {
+   "file": "S20.mat",
+   "bytes": 897974488,
+   "sha256": "980f0150d17494efee6eb3130b311c785831285cddce8f3c9b1bc606870acddd"
+  }
+ ]
+}
