@@ -1,12 +1,39 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "BNCI 2024-001 Handwritten Character Classification dataset",
+  "description": "This dataset comprises EEG recordings from 20 healthy participants performing motor imagery of handwritten letter production. Participants imagined writing ten different letters (a, d, e, f, j, n, o, s, t, v) using their right index finger in response to visual cues. The study investigates brain-computer interface applications through direct EEG classification and continuous kinematic decoding approaches, achieving classification accuracies of 26.2% for ten-letter and 46.7% for five-letter tasks.",
+  "methods_description": "EEG data were acquired at 500 Hz from 60 channels using BrainVision active electrodes with right mastoid reference. The experimental protocol involved visual presentation of letter cues (fade-in 2s, visible 0.5s, fade-out 2s) followed by a 4-second writing phase. Each of the 10 letters was written 60 times across 15 runs per session. Preprocessing included notch filtering at 50 Hz, bandpass filtering (0.3-70 Hz), bad channel interpolation, EOG artifact correction (SGEYESUB), ICA-based artifact removal, common average re-referencing, and downsampling to 128 Hz. Two datasets were created with different frequency bands (0.3-3 Hz and 0.3-40 Hz) for analysis.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Markus R. Crell": {
       "orcid": "0000-0001-5692-8260"
     },
     "Gernot R. Müller-Putz": {}
   },
+  "keywords": [
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Brain-computer interfaces"
+    },
+    {
+      "term": "Motor imagery"
+    },
+    {
+      "term": "Handwriting"
+    },
+    {
+      "term": "Kinematic decoding"
+    },
+    {
+      "term": "EEG classification"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1016/j.compbiomed.2024.109132",
@@ -19,55 +46,28 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000161",
+      "identifier": "https://nemar.org/dataset/nm000161",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     }
   ],
-  "title": "BNCI 2024-001 Handwritten Character Classification dataset",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "10.9 GB (43 files)"
+    "29.0 GB (63 files)"
   ],
   "formats": [
     ".bdf",
     ".html",
     ".json",
+    ".mat",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "description": "This dataset comprises EEG recordings from 20 healthy participants performing motor imagery of handwritten letter production. Participants imagined writing ten letters (a, d, e, f, j, n, o, s, t, v) using their right index finger in response to visual cues. The study investigates character classification through direct EEG decoding and a two-step approach combining continuous kinematic reconstruction with letter classification, achieving 26.2% accuracy for ten-letter classification and 46.7% for five-letter classification.",
-  "methods_description": "EEG data were acquired at 500 Hz using 60 active electrodes (Brain Products GmbH cap) with 4 EOG channels, referenced to right mastoid. Preprocessing included 50 Hz notch filtering, 0.3-70 Hz bandpass filtering (Butterworth, order 4), bad channel interpolation, EOG artifact correction (SGEYESUB), ICA-based artifact removal, common average re-referencing, bad segment rejection (±120 μV threshold, kurtosis/probability >7 SD), and downsampling to 128 Hz. Two datasets were created with different frequency bands (0.3-3 Hz and 0.3-40 Hz). Classification employed Shrinkage Linear Discriminant Analysis and EEGNet CNN with 2-times repeated 5-fold cross-validation.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "handwriting"
-    },
-    {
-      "term": "kinematic decoding"
-    },
-    {
-      "term": "character classification"
-    },
-    {
-      "term": "continuous movement decoding"
-    }
-  ],
-  "source_hash": "e24c8b2bd928b6739a47b643010c515c4b42f2af792172c43dec5a2a01adc1c1"
+  "source_hash": "8fc126f95113055262fea0c0bfb500ba037eea191e1337017a1fc7324c16549e"
 }
