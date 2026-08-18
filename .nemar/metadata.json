@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2024-001 Handwritten Character Classification dataset",
-  "description": "This dataset comprises EEG recordings from 20 healthy participants performing motor imagery of handwritten letter production. Participants imagined writing ten different letters (a, d, e, f, j, n, o, s, t, v) using their right index finger in response to visual cues. The study investigates brain-computer interface applications through direct EEG classification and continuous kinematic decoding approaches, achieving classification accuracies of 26.2% for ten-letter and 46.7% for five-letter tasks.",
-  "methods_description": "EEG data were acquired at 500 Hz from 60 channels using BrainVision active electrodes with right mastoid reference. The experimental protocol involved visual presentation of letter cues (fade-in 2s, visible 0.5s, fade-out 2s) followed by a 4-second writing phase. Each of the 10 letters was written 60 times across 15 runs per session. Preprocessing included notch filtering at 50 Hz, bandpass filtering (0.3-70 Hz), bad channel interpolation, EOG artifact correction (SGEYESUB), ICA-based artifact removal, common average re-referencing, and downsampling to 128 Hz. Two datasets were created with different frequency bands (0.3-3 Hz and 0.3-40 Hz) for analysis.",
+  "description": "This dataset comprises EEG recordings from 20 healthy participants performing motor imagery of handwritten letter production. Participants imagined writing ten letters (a, d, e, f, j, n, o, s, t, v) using their right index finger in response to visual cues. The study investigates brain-computer interface applications through direct EEG classification and continuous kinematic decoding approaches, achieving classification accuracies of 26.2% for ten-letter and 46.7% for five-letter tasks.",
+  "methods_description": "EEG data were acquired at 500 Hz from 60 channels using BrainVision active electrodes with right mastoid reference. The experimental protocol involved visual presentation of letter cues (fade-in 2s, visible 0.5s, fade-out 2s) followed by a 4-second writing phase. Each of ten letters was written 60 times across 15 runs per session. Preprocessing included notch filtering at 50 Hz, bandpass filtering (0.3-70 Hz), bad channel interpolation, EOG artifact correction (SGEYESUB), ICA-based artifact removal, common average re-referencing, and downsampling to 128 Hz. Two datasets were created with different frequency bands (0.3-3 Hz and 0.3-40 Hz) for analysis.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -19,16 +19,16 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "Brain-computer interfaces"
+      "term": "motor imagery"
     },
     {
-      "term": "Motor imagery"
+      "term": "brain-computer interfaces"
     },
     {
-      "term": "Handwriting"
+      "term": "handwriting"
     },
     {
-      "term": "Kinematic decoding"
+      "term": "kinematic decoding"
     },
     {
       "term": "EEG classification"
@@ -69,5 +69,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "8fc126f95113055262fea0c0bfb500ba037eea191e1337017a1fc7324c16549e"
+  "source_hash": "2d92d7081ea5584db3019958be274092ac6fda692e64c2845d44dbbf241adbeb"
 }
