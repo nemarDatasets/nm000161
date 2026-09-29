@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2024-001 Handwritten Character Classification dataset",
-  "description": "This dataset comprises EEG recordings from 20 healthy participants performing motor imagery of handwritten letter production. Participants imagined writing ten letters (a, d, e, f, j, n, o, s, t, v) using their right index finger in response to visual cues. The study investigates brain-computer interface applications through direct EEG classification and continuous kinematic decoding approaches, achieving classification accuracies of 26.2% for ten-letter and 46.7% for five-letter tasks.",
-  "methods_description": "EEG data were acquired at 500 Hz from 60 channels using BrainVision active electrodes with right mastoid reference. The experimental protocol involved visual presentation of letter cues (fade-in 2s, visible 0.5s, fade-out 2s) followed by a 4-second writing phase. Each of ten letters was written 60 times across 15 runs per session. Preprocessing included notch filtering at 50 Hz, bandpass filtering (0.3-70 Hz), bad channel interpolation, EOG artifact correction (SGEYESUB), ICA-based artifact removal, common average re-referencing, and downsampling to 128 Hz. Two datasets were created with different frequency bands (0.3-3 Hz and 0.3-40 Hz) for analysis.",
+  "description": "EEG recordings from 20 healthy participants who wrote ten letters (a, d, e, f, j, n, o, s, t, v) with the right index finger after a visual cue. The dataset supports classification of handwritten characters, either directly from low-frequency and broadband EEG or with a two-step approach that first decodes continuous hand kinematics and then classifies the letter. It is intended for research on non-invasive brain-computer interfaces for communication.",
+  "methods_description": "60-channel active-electrode EEG plus 4 EOG channels were recorded with BrainVision amplifiers at 500 Hz, referenced to the right mastoid. Each trial lasted 8.5 s: the letter faded in for 2 s, stayed visible for 0.5 s and faded out for 2 s, followed by a 4 s writing phase. Each letter was written 60 times across 15 runs. Preprocessing included notch and bandpass filtering, EOG correction, ICA, common average referencing, bad-segment rejection and downsampling to 128 Hz.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -14,24 +14,29 @@
   },
   "keywords": [
     {
-      "term": "Electroencephalography",
+      "term": "EEG"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "Handwriting",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D006236"
+    },
+    {
+      "term": "continuous movement decoding"
     },
     {
       "term": "motor imagery"
     },
     {
-      "term": "brain-computer interfaces"
-    },
-    {
-      "term": "handwriting"
-    },
-    {
-      "term": "kinematic decoding"
-    },
-    {
-      "term": "EEG classification"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     }
   ],
   "related_identifiers": [
@@ -49,6 +54,16 @@
       "identifier": "https://nemar.org/dataset/nm000161",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "resource_type_general": "Dataset",
@@ -57,7 +72,7 @@
     "eeg"
   ],
   "sizes": [
-    "29.0 GB (63 files)"
+    "26.99 GB (63 files)"
   ],
   "formats": [
     ".bdf",
